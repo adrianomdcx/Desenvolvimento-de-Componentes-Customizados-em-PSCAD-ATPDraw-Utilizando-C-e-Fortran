@@ -30,4 +30,3 @@ O projeto guarda os caminhos locais do computador em que foi criado; por isso, o
 
 ![Blocos de arquivo do compilador Fortran e das funções em C no PSCAD](assets/fontes-pscad.png)
 
-Neste repositório os fontes estão nomeados `compilador.f` e `codigos.c`. Porém, `Ccases.pscx` ainda referencia `al.gf.f` e `POpqa.c` em caminhos locais; esses dois arquivos não estão incluídos aqui. Os fontes do repositório implementam outro conjunto de rotinas, então mudar apenas o caminho dos blocos para eles não basta para reproduzir essa simulação. Para executar o caso como foi montado, é preciso ter as fontes que o projeto referencia ou adaptar o projeto e o código para que usem o mesmo conjunto de funções.
