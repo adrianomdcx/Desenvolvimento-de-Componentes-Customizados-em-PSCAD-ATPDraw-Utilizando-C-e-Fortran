@@ -4,7 +4,7 @@ Este repositório reúne rotinas em C, as interfaces Fortran usadas para chamá-
 
 ## O que fazem os fontes
 
-- `codigos.c` implementa uma portadora triangular, a transformada de Clarke, os comandos lógicos das chaves pares e ímpares do GCSC e um distúrbio de tensão e frequência.
+- `codigos.c` implementa uma portadora triangular, a transformada de Clarke, os comandos lógicos das chaves pares e ímpares do capacitor série controlado por gate, GCSC, e um distúrbio de tensão e frequência.
 - `compilador.f` contém as rotinas `AUX_*` que passam os dados entre o Fortran do PSCAD e as funções em C. A interface da portadora triangular foi alinhada com a função C e recebe cinco argumentos: inclinação, deslocamento, período, tempo e saída.
 
 Em `codigos.c`, a portadora varia de 0 a 1 e é ajustada por inclinação e deslocamento. A transformada de Clarke separa as componentes alfa, beta e de sequência zero. Os controles do GCSC produzem um sinal lógico (0 ou 1) conforme a corrente e as condições angulares recebidas. A rotina de distúrbio altera a tensão de referência e a frequência quando o sinal de entrada supera o limite configurado; sem esse evento, mantém a tensão de referência e 60 Hz.
